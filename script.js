@@ -8,6 +8,22 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburgerMenu.setAttribute('aria-expanded', String(!expanded));
         adjustCarouselContainer(); // Adjust carousel container size after toggling menu
     });
+
+    // Add event listener to submenu items
+    const subMenuLinks = document.querySelectorAll('.nav-links ul li ul li a');
+    subMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            adjustCarouselContainer(); // Adjust carousel container size after submenu item click
+        });
+    });
+
+    // Add event listener to main menu items
+    const mainMenuLinks = document.querySelectorAll('.nav-links > li > a');
+    mainMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            adjustCarouselContainer(); // Adjust carousel container size after main menu item click
+        });
+    });
 });
 
 // Function to adjust carousel container size based on header height
@@ -16,11 +32,3 @@ function adjustCarouselContainer() {
     const carouselContainer = document.querySelector('.carousel-container');
     carouselContainer.style.marginTop = headerHeight + 'px';
 }
-
-// Event listener for changes in header size
-window.addEventListener('resize', adjustCarouselContainer);
-
-// Call adjustCarouselContainer() function when DOM content is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    adjustCarouselContainer(); // Call initially
-});
