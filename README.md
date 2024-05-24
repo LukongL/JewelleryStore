@@ -2,6 +2,10 @@ Mangate & Gallo Jewelry Store
 
 Welcome to the Mangate & Gallo Jewelry Store project! This README file provides an overview of the project, installation instructions, and details about the structure and functionality of the code.
 
+Demo:
+
+https://lukongl.github.io/JewelleryStore/
+
 Project Overview
 
 Mangate & Gallo is a fictional jewelry store website designed to showcase and sell a variety of exquisite jewelry pieces. The website features a modern and responsive design with the following key sections:
