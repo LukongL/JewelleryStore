@@ -12,6 +12,8 @@ header {
     color: ghostwhite;
     padding: 20px; /* Padding around the content inside the header */
     margin-bottom: 20px;
+    height: 90px; /* Fixed height to prevent resizing */
+    overflow: hidden; /* Ensure no content overflows */
 }
 
 
