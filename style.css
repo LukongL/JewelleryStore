@@ -94,8 +94,9 @@
     
     .carousel-container {
         width: 70%; /* Resize the carousel container to 50% of its parent's size */
-        margin: auto; /* Center the carousel container horizontally */
+        margin: 0 auto; /* Center the carousel container horizontally */
         overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+        transition: margin-top 0.3s ease; /* Smooth transition for margin changes */
     }
     
     .carousel {

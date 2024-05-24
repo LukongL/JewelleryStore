@@ -6,16 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('nav-active');
         const expanded = hamburgerMenu.getAttribute('aria-expanded') === 'true' || false;
         hamburgerMenu.setAttribute('aria-expanded', String(!expanded));
+        adjustCarouselContainer(); // Adjust carousel container size after toggling menu
     });
 });
-
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('nav-active');
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const expanded = hamburgerMenu.getAttribute('aria-expanded') === 'true' || false;
-    hamburgerMenu.setAttribute('aria-expanded', String(!expanded));
-}
 
 // Function to adjust carousel container size based on header height
 function adjustCarouselContainer() {
