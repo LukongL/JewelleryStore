@@ -26,3 +26,8 @@ function adjustCarouselContainer() {
 
 // Event listener for changes in header size
 window.addEventListener('resize', adjustCarouselContainer);
+
+// Call adjustCarouselContainer() function when DOM content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    adjustCarouselContainer(); // Call initially
+});
